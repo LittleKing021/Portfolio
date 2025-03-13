@@ -1,7 +1,6 @@
 html {
     font-size: 15px;
     scroll-behavior: smooth;
-    font-family: Apercu, Gill Sans, sans-serif;
 }
 
 .nav-links {
@@ -25,6 +24,9 @@ a:hover {
     border-bottom: 1px solid;
 }
 
+#about-me {
+    font-family: Marcellus, sans-serif;
+}
 
 
 
