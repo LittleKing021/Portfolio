@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.my-profile {
+    font-family: Apercu, Gill Sans, sans-serif;
+}
+
 .nav-links {
     background: transparent;
     display: flex;
@@ -13,6 +17,7 @@ html {
     list-style: none;
     position: sticky;
     text-transform: uppercase;
+    justify-content: flex-end;
 }
 
 .nav-links a {
@@ -25,7 +30,8 @@ a:hover {
 }
 
 #about-me {
-    font-family: Marcellus, sans-serif;
+    font-family: Apercu, Gill Sans, sans-serif;
+    font-weight: 350;
 }
 
 
