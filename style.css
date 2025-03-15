@@ -40,14 +40,15 @@ a:hover {
     text-transform: none;
 }
 
+ #expertise ul {
+    list-style: none;
+}
+
 .social-icons li a {
     color: inherit;
     text-decoration: none;
 }
 
-/* #expertise ul {
-    list-style: none;
-} */
 
 /* Footer Page */
 
