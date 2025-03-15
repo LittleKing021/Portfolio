@@ -33,7 +33,10 @@ a:hover {
 
 #about-me {
     font-family: Apercu, Gill Sans, sans-serif;
-    font-weight: 350;
+}
+
+p {
+    font-family: Apercu, Gill Sans, sans-serif;
 }
 
 /* Footer Page */
