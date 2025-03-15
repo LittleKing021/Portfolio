@@ -9,7 +9,7 @@ nav {
     display: flex;
     font-family: Apercu, Gill Sans, sans-serif;
     font-size: .75rem;
-    font-weight: 700;
+    font-weight: 600;
     gap: .2rem;
     justify-content: flex-end;
     list-style: none;
@@ -37,6 +37,9 @@ a:hover {
     text-transform: none;
 }
 
+/* #expertise ul {
+    list-style: none;
+} */
 
 /* Footer Page */
 
