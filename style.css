@@ -8,9 +8,9 @@ nav {
     background: transparent;
     display: flex;
     font-family: Apercu, Gill Sans, sans-serif;
-    font-size: .75rem;
+    font-size: .8rem;
     font-weight: 600;
-    gap: .2rem;
+    gap: .3rem;
     height: 1rem;
     justify-content: flex-end;
     letter-spacing: -.3px;
