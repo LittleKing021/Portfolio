@@ -9,9 +9,11 @@ nav {
     font-family: Apercu, Gill Sans, sans-serif;
     font-size: .75rem;
     gap: 1rem;
+    justify-content: flex-end;
     list-style: none;
     position: sticky;
     text-transform: uppercase;
+    width: 100%;
 }
 
 nav a {
@@ -26,7 +28,9 @@ a:hover {
 
 .logo {
     font-size: 1rem;
-    font-weight: 650;
+    font-weight: 600;
+    justify-content: flex-start;
+    margin: auto;
     text-transform: none;
 }
 
