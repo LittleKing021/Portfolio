@@ -4,12 +4,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+    width: 100%;
+}
+
 nav {
     background: transparent;
     display: flex;
     font-family: Apercu, Gill Sans, sans-serif;
     font-size: .8rem;
-    font-weight: 600;
+    font-weight: 550;
     gap: 0rem;
     height: 1rem;
     justify-content: flex-end;
