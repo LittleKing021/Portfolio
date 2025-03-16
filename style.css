@@ -10,7 +10,7 @@ nav {
     font-family: Apercu, Gill Sans, sans-serif;
     font-size: .8rem;
     font-weight: normal;
-    gap: -1rem;
+    gap: .3rem;
     height: 1rem;
     justify-content: flex-end;
     letter-spacing: -.4px;
@@ -40,8 +40,17 @@ a:hover {
     text-transform: none;
 }
 
+h2, h3 {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
  #expertise ul {
     list-style: none;
+}
+
+.social-icons {
+    display: flex;
 }
 
 .social-icons li a {
