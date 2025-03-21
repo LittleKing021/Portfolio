@@ -20,7 +20,7 @@ nav {
     letter-spacing: -.4px;
     list-style: none;
     line-height: 2.5rem;
-    /* padding: 0rem 1rem; */
+    padding-bottom: .3rem;
     position: fixed;
     text-transform: uppercase;
     top: 0;
