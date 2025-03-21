@@ -23,7 +23,7 @@ nav {
     position: fixed;
     text-transform: uppercase;
     top: 0;
-    width: 97%;
+    width: 95%;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
