@@ -44,6 +44,7 @@ a:hover {
 .logo, .logo:hover {
     border-bottom: none;
     font-size: 1.2rem;
+    font-style: italic;
     font-weight: 455;
     /* justify-content: flex-start; */
     margin: auto;
@@ -70,10 +71,14 @@ img {
     margin-bottom: 45px;
  }
 
+ #expertise {
+    font-style: italic;
+    letter-spacing: 1px;
+ }
+
 
 h2, h3 {
     font-weight: 400;
-    letter-spacing: -1px;
 }
 
 
@@ -99,6 +104,11 @@ footer {
 }
 
 #copyright {
+    border-top: 0.01px solid silver;
+    height: 1rem;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 2rem;
     text-align: center;
 }
 
@@ -183,6 +193,10 @@ footer {
 
     #about {
         margin-top: 65px;
+    }
+
+    #copyright {
+        height: .5rem;
     }
 
 }
