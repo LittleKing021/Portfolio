@@ -50,11 +50,8 @@ a:hover {
 /* NAVIGATION BAR */
 
 img {
+    margin-top: 1.5rem;
     object-fit: contain;
-}
-
-#ryan-mormor {
-        margin-top: 45px;
 }
 
 #about-me {
