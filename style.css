@@ -6,6 +6,7 @@ html {
 
 /* NAVIGATION BAR */
 nav {
+    background-color: rgb(253, 253, 253);
     border-bottom: 0.2px solid silver;
     box-sizing: border-box;
     display: flex;
@@ -112,6 +113,7 @@ h2, h3 {
 
 footer {
     background-color: aliceblue;
+    height: 2rem;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -119,7 +121,6 @@ footer {
 
 #copyright {
     border-top: 0.01px solid silver;
-    height: 1rem;
     font-style: italic;
     font-size: 15px;
     line-height: 2rem;
