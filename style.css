@@ -67,6 +67,17 @@ img {
     margin-bottom: 45px;
 }
 
+#expertise ul {
+    list-style: none;
+}
+
+#expertise ul li {
+    padding-bottom: .5em;
+}
+
+
+
+
 #expertise {
     margin-bottom: 45px;
  }
