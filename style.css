@@ -6,7 +6,6 @@ html {
 
 /* NAVIGATION BAR */
 nav {
-    background-color: rgb(253, 253, 253);
     border-bottom: 0.2px solid silver;
     box-sizing: border-box;
     display: flex;
@@ -59,14 +58,15 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-img {
-    margin-top: 1.5rem;
-    object-fit: contain;
-}
-
 #about-me {
     margin-bottom: 45px;
 }
+
+#expertise {
+    margin-bottom: 45px;
+    font-style: italic;
+    letter-spacing: 1px;
+ }
 
 #expertise ul {
     list-style: none;
@@ -76,17 +76,9 @@ img {
     padding-bottom: .5em;
 }
 
-
-
-
-#expertise {
-    margin-bottom: 45px;
- }
-
- #expertise {
-    font-style: italic;
-    letter-spacing: 1px;
- }
+#expertise ul li svg {
+    transition: 1s linear;
+}
 
 
 h2, h3 {
