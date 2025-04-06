@@ -16,11 +16,11 @@ body {
 /* Lock scroll when menu is open */
 body.no-scroll {
     overflow: hidden;
-  }  
+}
 
 /* NAVIGATION BAR */
   
-  .nav-container {
+.nav-container {
     border-bottom: .4px solid silver;
     position: fixed;
     top: 0;
@@ -35,73 +35,72 @@ body.no-scroll {
     z-index: 10;
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
-  }
-  
-  .logo {
+}
+
+.logo {
     font-weight: 500;
     font-size: 1.05rem;
     font-style: italic;
     margin-left: -5px;
-    
-    &.logo a {
-        color: inherit;
-        text-decoration: none;
-    }
+}
 
-  }
-  
-  /* Hamburger Menu*/
-  .hamburger {
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
     display: none;
     cursor: pointer;
     width: 25px;
     z-index: 11;
-  }
-  
-  .bar {
+}
+
+.bar {
     height: 2.5px;
     width: 100%;
     background-color: #333;
     margin: 5px 0;
     transition: 0.4s;
-  }
-  
-  .hamburger.active .bar:nth-child(1) {
+}
+
+.hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-  }
-  .hamburger.active .bar:nth-child(2) {
+}
+.hamburger.active .bar:nth-child(2) {
     opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(3) {
+}
+.hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-  }
-  
-  /* Nav menu default (desktop) */
-  .nav-menu {
+}
+
+/* Nav menu default (desktop) */
+.nav-menu {
     display: flex;
     font-size: 0.85rem;
     text-transform: uppercase;
-  }
-  
-  .nav-menu ul {
+}
+
+.nav-menu ul {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-menu ul li a {
+}
+
+.nav-menu ul li a {
     text-decoration: none;
     color: inherit;
     font-size: .75rem;
     font-weight: 400;
-  }
-  
-  .nav-menu ul li a:hover {
+}
+
+.nav-menu ul li a:hover {
     border-bottom: 0.7px solid black;
     padding-bottom: 5px;
-  }  
+}
 
 #about {
     margin-top: 4.5rem;
@@ -112,19 +111,19 @@ body.no-scroll {
     margin-bottom: 45px;
 }
 
-  .chip-scroll {
+.chip-scroll {
     display: flex;
     overflow-x: auto;
     gap: 12px;
     padding: 10px 0;
     scroll-snap-type: x mandatory;
-  }
-  
-  .chip-scroll::-webkit-scrollbar {
+}
+
+.chip-scroll::-webkit-scrollbar {
     display: none;
-  }
-  
-  .chip {
+}
+
+.chip {
     cursor: pointer;
     flex: 0 0 auto;
     padding: 10px 16px;
@@ -134,12 +133,11 @@ body.no-scroll {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     scroll-snap-align: start;
     transition: background 0.2s ease;
-  }
-  
-  .chip:hover {
-    background-color: #ddd;
-  }  
+}
 
+.chip:hover {
+    background-color: #ddd;
+}
 
 h2, h3 {
     font-weight: 400;
@@ -151,13 +149,13 @@ h2, h3 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding: 80px 20px 20px; /* top padding accounts for fixed nav */
-  }
-  
-  .card-container::-webkit-scrollbar {
-    display: none; /* Hide scroll bar on WebKit (iOS/Safari/Chrome) */
-  }
-  
-  .card {
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
     flex: 0 0 auto;
     width: 280px;
     height: 200px;
@@ -167,17 +165,17 @@ h2, h3 {
     overflow: hidden;
     scroll-snap-align: start;
     transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: scale(1.02);
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }  
+}
 
 #contact {
     line-height: 2rem;
@@ -212,7 +210,6 @@ footer {
 
 /* END OF FOOTER PAGE */
 
-
 /* MEDIA QUERIES */
 
 /* Mobile styles */
@@ -231,16 +228,16 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 100px 30px 30px;
+      padding: 120px 30px 30px;
       transform: translateX(100%);
       transition: transform 0.3s ease-in-out;
-      z-index: 999;
+      z-index: 9999;
     }
-  
+
     .nav-menu.active {
       transform: translateX(0);
     }
-  
+
     .nav-menu ul {
       list-style: none;
       padding: 0;
@@ -250,11 +247,11 @@ footer {
       flex-direction: column;
       gap: 25px;
     }
-  
+
     .nav-menu li {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-  
+
     .nav-menu li a {
       display: block;
       width: 100%;
@@ -264,16 +261,13 @@ footer {
       font-weight: 500;
       text-decoration: none;
     } 
-  
+
     .nav-menu li a:hover {
       color: #1e90ff;
     }
-  
+
     .hamburger {
       display: block;
       z-index: 1000;
     }
 }
-  
-
-/* END OF MEDIA QUERIES */
