@@ -30,7 +30,7 @@ body.no-scroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
     -webkit-backdrop-filter: blur(7px);
@@ -41,6 +41,7 @@ body.no-scroll {
     font-weight: 500;
     font-size: 1.05rem;
     font-style: italic;
+    padding-left: -5px;
     
     &.logo a {
         color: inherit;
@@ -216,6 +217,7 @@ footer {
 /* Mobile styles */
 @media (max-width: 480px) {
     .nav-menu {
+      color: #fff;
       position: fixed;
       top: 0;
       right: 0;
