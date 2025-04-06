@@ -39,7 +39,7 @@ body.no-scroll {
   
   .logo {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-style: italic;
     
     &.logo a {
@@ -93,7 +93,8 @@ body.no-scroll {
   .nav-menu ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight: 450;
+    font-size: .75rem;
+    font-weight: 400;
   }
   
   .nav-menu ul li a:hover {
@@ -102,7 +103,7 @@ body.no-scroll {
   }  
 
 #about {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     margin-bottom: 3rem;
 }
 
@@ -110,49 +111,6 @@ body.no-scroll {
     margin-bottom: 45px;
 }
 
-
-/* SKILLS FOR DESKTOP */
-.skills-grid {
-    padding: 40px 20px;
-    text-align: center;
-  
-&.skills-grid h2 {
-    font-size: 1.2rem;
-    margin-bottom: 24px;
-  }
-  
-&.skills-grid .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
-  }
-  
-&.skill-card {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px 10px;
-    font-weight: bold;
-    transition: all 0.2s ease;
-  }
-  
-&.skill-card:hover {
-    transform: translateY(-4px);
-    background: #eaeaea;
-  }
-  
-&.skill-chips {
-    padding: 40px 20px;
-  }
-  
-&.skill-chips h2 {
-    font-size: 1.3rem;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-}
-  
-/* SKILLS FOR MOBILE */
   .chip-scroll {
     display: flex;
     overflow-x: auto;
@@ -243,9 +201,10 @@ footer {
 }
 
 .copyright {
-    border-top: 0.01px solid silver;
+    border-top: 0.001px solid silver;
     font-style: italic;
     font-size: 13.5px;
+    line-height: 3rem;
     text-align: center;
 }
 
@@ -282,18 +241,19 @@ footer {
       width: 220px;
       height: calc(100% - 60px);
       flex-direction: column;
-      background-color: #111;
       padding-top: 20px;
       transition: right 0.3s ease-in-out;
       z-index: 999;
       border-left: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: -6px 0 15px rgba(0, 0, 0, 0.2);
+      background-color: #111; /* Add solid background here */
     }
   
     /* When active, slide in */
     .nav-menu.active {
       display: flex;
       right: 0;
+      background-color: #111; /* Ensure background is solid when active */
     }
   
     /* Navigation menu items */
@@ -323,15 +283,6 @@ footer {
     .nav-menu a:hover {
       background-color: #333;
     }
-    
-    /* Hide skills grid and show skill chips on mobile */
-    .skills-grid {
-      display: none;
-    }
-  
-    .skill-chips {
-      display: block;
-    }
-  }  
+  }    
 
 /* END OF MEDIA QUERIES */

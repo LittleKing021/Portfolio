@@ -2,10 +2,10 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
 hamburger.addEventListener('click', (e) => {
-  e.stopPropagation(); // prevent click from bubbling up
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  document.body.classList.toggle('no-scroll');
+  e.stopPropagation(); // Prevent click from bubbling up
+  hamburger.classList.toggle('active'); // Toggle active state for hamburger
+  navMenu.classList.toggle('active'); // Toggle menu visibility
+  document.body.classList.toggle('no-scroll'); // Prevent body scroll when menu is open
 });
 
 // Close menu when clicking outside
