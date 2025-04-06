@@ -215,74 +215,52 @@ footer {
 
 /* Mobile styles */
 @media (max-width: 480px) {
-    /* Display hamburger on mobile */
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      width: 25px;
-      z-index: 11;
-    }
-  
-    /* Hamburger bars */
-    .bar {
-      height: 2.5px;
-      width: 100%;
-      background-color: #333;
-      margin: 5px 0;
-      transition: 0.4s;
-    }
-  
-    /* Nav menu for mobile */
     .nav-menu {
       display: none;
-      position: fixed;
-      top: 60px;
-      right: -250px;
-      width: 220px;
-      height: calc(100% - 60px);
       flex-direction: column;
-      padding-top: 20px;
-      transition: right 0.3s ease-in-out;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #111;
+      padding: 60px 20px 20px;
+      transition: transform 0.3s ease-in-out;
       z-index: 999;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: -6px 0 15px rgba(0, 0, 0, 0.2);
-      background-color: #111; /* Add solid background here */
+      transform: translateX(100%);
     }
   
-    /* When active, slide in */
     .nav-menu.active {
       display: flex;
-      right: 0;
-      background-color: #111; /* Ensure background is solid when active */
+      transform: translateX(0);
     }
   
-    /* Navigation menu items */
     .nav-menu ul {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      gap: 20px;
+      list-style: none;
       padding: 0;
       margin: 0;
-      list-style: none;
-      width: 100%;
     }
   
-    .nav-menu ul li {
-      background-color: transparent;
-    }
-  
-    .nav-menu a {
+    .nav-menu li a {
       color: white;
       text-decoration: none;
+      font-size: 1.1rem;
       font-weight: 500;
-      padding: 10px;
-      text-align: center;
       display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #444;
     }
   
-    /* Hover effect for mobile nav */
-    .nav-menu a:hover {
-      background-color: #333;
+    .hamburger {
+      display: block;
+      z-index: 1000;
     }
-  }    
+  }  
 
 /* END OF MEDIA QUERIES */
