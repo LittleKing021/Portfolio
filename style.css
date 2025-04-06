@@ -1,10 +1,11 @@
 :root {
     --main-font: Apercu, Gill Sans;
+    --second-font: Jasmine UPC;
 }
 
 html {
     font-family: var(--main-font);
-    font-size: .80rem;
+    font-size: 1rem;
     scroll-behavior: smooth;
 }
 
@@ -29,7 +30,7 @@ body.no-scroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
     -webkit-backdrop-filter: blur(7px);
@@ -77,30 +78,31 @@ body.no-scroll {
   /* Nav menu default (desktop) */
   .nav-menu {
     display: flex;
+    font-size: 0.85rem;
     text-transform: uppercase;
-
-  &.nav-menu ul {
+  }
+  
+  .nav-menu ul {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
-  &.nav-menu ul li a {
+  
+  .nav-menu ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight: normal;
+    font-weight: 450;
   }
-
-  &.nav-menu ul li a:hover {
-    border-bottom: .7px solid black;
+  
+  .nav-menu ul li a:hover {
+    border-bottom: 0.7px solid black;
     padding-bottom: 5px;
-  }
-}
+  }  
 
 #about {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
 }
 
@@ -252,53 +254,84 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* Hide hamburger by default */
+/* Mobile styles */
 @media (max-width: 480px) {
+    /* Display hamburger on mobile */
     .hamburger {
       display: block;
+      cursor: pointer;
+      width: 25px;
+      z-index: 11;
     }
   
-    /* Mobile nav menu (initially hidden & transparent) */
-.nav-menu {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: -250px;
-    width: 200px;
-    height: calc(100% - 60px);
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.3); /* translucent base */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    backdrop-filter: blur(10px); /* blur effect */
-    padding-top: 20px;
-    transition: right 0.3s ease-in-out;
-    z-index: 9;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-  }
+    /* Hamburger bars */
+    .bar {
+      height: 2.5px;
+      width: 100%;
+      background-color: #333;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
   
-  /* When active, slide in */
-  .nav-menu.active {
-    display: block;
-    right: 0;
-  }
-  
-    .nav-menu ul {
+    /* Nav menu for mobile */
+    .nav-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: -250px;
+      width: 220px;
+      height: calc(100% - 60px);
       flex-direction: column;
-      gap: 0;
+      background-color: #111;
+      padding-top: 20px;
+      transition: right 0.3s ease-in-out;
+      z-index: 999;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: -6px 0 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* When active, slide in */
+    .nav-menu.active {
+      display: flex;
+      right: 0;
+    }
+  
+    /* Navigation menu items */
+    .nav-menu ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%;
     }
   
     .nav-menu ul li {
-      padding: 15px 20px;
+      background-color: transparent;
     }
-
-
-    .skills-grid {
-        display: none;
-      }
+  
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px;
+      text-align: center;
+      display: block;
+    }
+  
+    /* Hover effect for mobile nav */
+    .nav-menu a:hover {
+      background-color: #333;
+    }
     
-      .skill-chips {
-        display: block;
-      }
-  }
+    /* Hide skills grid and show skill chips on mobile */
+    .skills-grid {
+      display: none;
+    }
+  
+    .skill-chips {
+      display: block;
+    }
+  }  
 
 /* END OF MEDIA QUERIES */
