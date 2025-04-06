@@ -41,7 +41,7 @@ body.no-scroll {
     font-weight: 500;
     font-size: 1.05rem;
     font-style: italic;
-    padding-left: -5px;
+    margin-left: -5px;
     
     &.logo a {
         color: inherit;
@@ -125,6 +125,7 @@ body.no-scroll {
   }
   
   .chip {
+    cursor: pointer;
     flex: 0 0 auto;
     padding: 10px 16px;
     border-radius: 999px;
@@ -257,12 +258,12 @@ footer {
     .nav-menu li a {
       display: block;
       width: 100%;
-      padding: 12px 0;
       color: #fff;
+      margin: 1rem 0;
       font-size: 1.2rem;
       font-weight: 500;
       text-decoration: none;
-    }
+    } 
   
     .nav-menu li a:hover {
       color: #1e90ff;
